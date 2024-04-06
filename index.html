@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="responsive-index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600&family=Kanit:wght@600&family=Roboto&family=Roboto+Mono:wght@600&family=Vina+Sans&display=swap" >
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <div class="spinner">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    <div class="background">
+        <div class="nav_bar">
+            <div class="logo">
+                <img src="./img/MyLogo.png" alt="">
+            </div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Me</a>
+                <a href="sampledwork.html">Sampled Work</a>
+            </nav>
+        </div>
+        <div class="middlepart">
+            <div class="info">
+                <h2 class="animate__animated animate__lightSpeedInLeft">Hi I'm</h2>
+                <h1 class="animate__animated animate__lightSpeedInLeft">Joshua Domingo</h1>
+                <p id="typing-text"></p>
+            </div>
+            <div class="profpic" >
+                <img src="./img/profpic.png" alt="" class="animate__animated animate__zoomInUp">
+            </div>
+        </div>
+        <div class="footer">
+            <div class="upper-part">
+                
+            </div>
+            <div class="icons">
+                <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/joshus.domingo"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="contactbtn">
+            <button onclick="openPopup()" class="animate__animated animate__zoomInLeft">contact me</button>
+        </div>
+        <form action="insert.php" method="POST">
+            <div class="popup-container" id="popupContainer">
+                <div class="popup-content">
+                    <h4 class="popup-close" onclick="closePopup()" ><i class="fas fa-times"></i></h4>
+                    <h2>Contact Me</h2>
+                    <p>Phone Number: 09278761095</p>
+                    <p>Email: jeswaaa1803@gmail.com</p>
+                    <label for="fullname">Fullname</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Fullname">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Email">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Your message"></textarea>
+                    <button>Send</button>
+                    <p>© 2023 Joshua Domingo. All right reserved.</p>
+                </div>
+            </div>
+        </form>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+     </div>
+    
+     
+      <script>
+        window.addEventListener("load", () => {
+            const loader = document.querySelector(".spinner");
+
+            loader.classList.add("spinner--hidden");
+
+            loader.addEventListener("transitionend", () => {
+                document.body.removeChild(loader);
+            })
+        })
+    </script>
+    <script>
+        // JavaScript functions to control the popup
+        function openPopup() {
+            document.getElementById("popupContainer").style.display = "flex";
+        }
+    
+        function closePopup() {
+            document.getElementById("popupContainer").style.display = "none";
+        }
+    </script>
+    
+    <script>
+                const text = "System Dev | FrontEnd.";
+        let index = 0;
+
+        function type() {
+            document.getElementById("typing-text").textContent += text[index];
+            index++;
+            if (index >= text.length) {
+                index = 0; // Reset index to start over
+                document.getElementById("typing-text").textContent = ""; // Clear text to start over
+            }
+        }
+
+        setInterval(type, 200); // Adjust typing speed by changing the interval (milliseconds)
+
+    </script>
+    
+</body>
+</html>
