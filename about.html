@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="aboutme.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600&family=Kanit:wght@600&family=Roboto&family=Roboto+Mono:wght@600&family=Vina+Sans&display=swap" >
+    <title>About Me</title>
+</head>
+<body>
+    <div class="spinner">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    <div class="background">
+        <div class="nav_bar">
+            <div class="logo">
+                <img src="./img/MyLogo.png" alt="">
+            </div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Me</a>
+                <a href="sampledwork.html">Sampled Work</a>
+            </nav>
+            <div class="title">
+                <h1 data-aos="fade-down">ABOUT ME</h1>
+            </div>
+            <div class="content">
+                <div class="firstcontent">
+                    <img src="./img/picture_Aboutme.jpg" alt="" data-aos="fade-up-right">
+                </div>
+                <div class="text" data-aos="fade-right">
+                    <p> Hello! I'm Joshua Domingo, and I'm from the little town of Villa Labrador Rizal Nueva Ecija Philippines. 
+                        I'm a committed student at PHINMA Araullo University , twenty years old, and 
+                        I want to be a good front-end developer. My colorful goals and 
+                        objectives, which I hold dearly, have driven my academic career.
+        
+                        I see myself as an expressive person who loves to voice my
+                        ideas to people. I enjoy speaking honestly, whether it's
+                        to share my opinions on a subject or to articulate 
+                        concepts for a project. I follow my instincts since 
+                        I'm an intuitive person and they've helped me make 
+                        judgments that have always been in my best interests.
+        
+                        Another aspect of my personality is engaged, I regularly 
+                        participate in conversations with individuals and 
+                        organizations, offering my opinions and learning 
+                        about different viewpoints. Engaging in talks allows me 
+                        to gain useful ideas from individuals around me, which 
+                        helps me to keep learning and expanding my knowledge.
+        
+                        I am an active individual who, at heart, connects 
+                        the layers of life with passion, instinct, and a 
+                        sincere desire to engage with and improve the world 
+                        around me.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!--SKILL-COL-->
+
+        <div class="skill-col">
+            <h1  data-aos="fade-right" data-aos-duration="3000">Skills</h1>
+            <div class="container" data-aos="zoom-in-up" data-aos-duration="1000">
+                <img src="./img/html.png" alt="">
+                <h1>html</h1>
+                <div class="overlay-text">
+                    <p>Intermediate</p>
+                </div>
+            </div>
+            <div class="container" data-aos="zoom-in-up" data-aos-duration="1000">
+                <img src="./img/css.png" alt="">
+                <h1>css</h1>
+                <div class="overlay-text">
+                    <p>Intermediate</p>
+                </div>
+            </div>
+            <div class="container" data-aos="zoom-in-up" data-aos-duration="1000">
+                <img src="./img/sql.png" alt="">
+                <h1>MySql</h1>
+                <div class="overlay-text">
+                    <p>Intermediate</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <!--EDUCATION-COL-->
+        <div class="container">
+            <div class="education">
+                <h1  data-aos="fade-right" data-aos-duration="3000">Educational Background</h1>
+                <div class="school">
+                    <img src="./img/logo1.png" alt="">
+                    <p>Araullo University</p>
+                </div>
+                <div class="school">
+                    <img src="./img/logo2.png" alt="">
+                    <p>St. Scholastica's College</p>
+                </div>
+                <div class="school">
+                    <img src="./img/logo3.png" alt="">
+                    <p>San Antonio National High School</p>
+                </div>
+            </div>
+        </div>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    </div>  
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script>
+        window.addEventListener("load", () => {
+            const loader = document.querySelector(".spinner");
+
+            loader.classList.add("spinner--hidden");
+
+            loader.addEventListener("transitionend", () => {
+                document.body.removeChild(loader);
+            })
+        })
+    </script>
+</body>
+</html>
