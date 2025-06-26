@@ -3,147 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="responsive-index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600&family=Kanit:wght@600&family=Roboto&family=Roboto+Mono:wght@600&family=Vina+Sans&display=swap" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portfolio</title>
 </head>
+<style>
+    .my-font{
+        font-family: 'Bebas Neue';
+    }
+    .my-font-sub{
+        font-family: 'Montserrat';
+    }
+    .my-color-heading{
+        color: #9DD0B4;
+    }
+    .my-color-text{
+        color: #E0E0E0; 
+    }
+</style>
+<body class="">
+    <!-- Top Part -->
+    <nav class="px-4 py-5 mx-5 my-5">
+        <div class="flex my-font-sub p-3 gap-5 text-center justify-between space-y-5">
+            <div class="flex justify-start">
+                <img src="img/DSCF2770.JPG" alt="LogoImg" width="50" height="50" class="rounded-full">
+            </div>
+            <div class="flex justify-end space-x-5">
+                <a href="index.html" class="font-semibold text-black text-lg mx-4 hover:text-gray-500 transition duration-300 ease-in-out">Project</a>
+                <a href="about.html" class="font-semibold text-black text-lg mx-4 hover:text-gray-500 transition duration-300 ease-in-out">About Me</a>
+                <a href="sampledwork.html" class="font-semibold text-black text-lg mx-4 hover:text-gray-500 transition duration-300 ease-in-out">Skills</a>
+            </div>
+        </div>
+    </nav>
 
-<body>
-    <div class="spinner">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    <div class="background">
-        <div class="nav_bar">
-            <div class="logo">
-                <img src="./img/MyLogo.png" alt="">
-            </div>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="about.html">About Me</a>
-                <a href="sampledwork.html">Sampled Work</a>
-            </nav>
+    <!-- Middle Part -->
+    <div class="grid grid-cols-2 gap-1 px-5 mt-5 mb-5 items-center justify-center">
+        <div class="col-span-1">
+            <img src="img/DSCF2770.JPG" alt="Profile Picture" class="w-[500px] h-[600px] ml-[50px] rounded-xl mt-5">
         </div>
-        <div class="middlepart">
-            <div class="info">
-                <h2 class="animate__animated animate__lightSpeedInLeft">Hi I'm</h2>
-                <h1 class="animate__animated animate__lightSpeedInLeft">Joshua Domingo</h1>
-                <p id="typing-text"></p>
-            </div>
-            <div class="profpic" >
-                <img src="./img/profpic.png" alt="" class="animate__animated animate__zoomInUp">
+        <div class="col-span-1 text-white flex flex-col justify-center ml-15">
+            <h1 class="my-font text-9xl font-semibold my-color-heading tracking-[20px]">I'm Joshua </h1>
+            <h1 class="my-font text-9xl font-semibold my-color-heading tracking-[32px]">Domingo,</h1>
+            <div class="flex-col items-center justify-center mt-2">
+                <p class="text-black text-sm  my-font-sub mr-12 justify">I'm a frontend developer, ready to help you grow your business with a website that attracts more clients and increases sales.</p>
+                <p class="text-black mt-10 mb-5 my-font-sub text-lg font-semibold">Socials</p>
+                <!-- Socials Links -->
+                <div class="flex space-x-10 ">
+                    <a href="#" class="group flex justify-center p-2 rounded-md drop-shadow-xl from-gray-800 bg-[#424242] text-white font-semibold hover:translate-y-3 hover:rounded-[50%] transition-all duration-500 hover:from-[#331029] hover:to-[#310413]" >
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30" fill="white">
+                            <circle cx="12" cy="12" r="12" fill="#3b5998"/>
+                            <path d="M15.1 11.25H13.6V18H10.8V11.25H9.4V9H10.8V7.8C10.8 6.7 11.2 6 12.8 6H15V8.25H13.7C13.3 8.25 13.6 8.4 13.6 8.8V9H15.1L15 11.25Z" fill="white"/>
+                        </svg>
+                        <span class="absolute opacity-0 text-black group-hover:opacity-100 group-hover:text-white-700 group-hover:text-sm group-hover:-translate-y-10 duration-700">
+                        Facebook
+                        </span>
+                    </a>
+                    <a href="#" class="group flex justify-center p-2 rounded-md drop-shadow-xl from-gray-800 bg-[#424242] text-white font-semibold hover:translate-y-3 hover:rounded-[50%] transition-all duration-500 hover:from-[#331029] hover:to-[#310413]" >
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="30" height="30">
+                            <path fill="#e53935" d="M44 39c0 2.2-1.8 4-4 4H8c-2.2 0-4-1.8-4-4V15.7l20 13.3 20-13.3V39z"/>
+                            <path fill="#c62828" d="M24 29L4 15.7V9c0-2.2 1.8-4 4-4h32c2.2 0 4 1.8 4 4v6.7L24 29z"/>
+                            <path fill="#fbc02d" d="M44 9v6.7L24 29 4 15.7V9l20 13.3L44 9z"/>
+                        </svg>
+
+                        <span class="absolute opacity-0 text-black group-hover:opacity-100 group-hover:text-black-700 group-hover:text-sm group-hover:-translate-y-10 duration-700">
+                        Gmail
+                        </span>
+                    </a>
+                    <a href="#" class="group flex justify-center p-2 rounded-md drop-shadow-xl from-gray-800 bg-[#424242] text-white font-semibold hover:translate-y-3 hover:rounded-[50%] transition-all duration-500 hover:from-[#331029] hover:to-[#310413]" >
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" height="30" width="30">
+                            <path fill="white" d="M511.6 76.3C269 76.3 69.8 275.5 69.8 518.1c0 195.3 126.6 361.1 302.2 419.6 22.1 4 30.2-9.6 30.2-21.3 0-10.5-.4-45.2-.6-82.1-123.1 22.6-149.1-29.9-158.6-57.4-5-12.6-26.6-51.6-45.4-62.1-15.5-8.1-37.6-28-2.9-28.5 34.9-.5 59.8 32.2 68.1 45.5 39.9 67.4 103.8 48 129.1 36.6 4.1-28.9 15.6-48 28.4-59-109.8-12.5-225.4-54.9-225.4-244.5 0-54 19.3-98.1 51.1-132.7-5.1-12.6-22.1-63.2 4.9-131.8 0 0 41.6-13.3 136.4 50.7 39.6-11 82-16.5 124.2-16.7 42.2.2 84.7 5.7 124.3 16.7 94.6-64 136.2-50.7 136.2-50.7 27.1 68.6 10.1 119.2 5 131.8 31.8 34.5 51.1 78.6 51.1 132.7 0 190.9-115.8 232-225.9 244.2 16 13.8 30.5 41 30.5 82.5 0 59.8-.6 108-1 122.6 0 11.7 8 25.6 30.3 21.2 175.3-58.6 301.6-224.5 301.6-419.6.2-242.6-198.9-441.8-441.4-441.8z"/>
+                        </svg>
+                        <span class="absolute opacity-0 text-black group-hover:opacity-100 group-hover:text-white-700 group-hover:text-sm group-hover:-translate-y-10 duration-700">
+                        Github
+                        </span>
+                    </a>
+                </div>
+        
             </div>
         </div>
-        <div class="footer">
-            <div class="upper-part">
-                
-            </div>
-            <div class="icons">
-                <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://www.facebook.com/joshus.domingo"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
-                <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox"><i class="fa-solid fa-envelope"></i></a>
-            </div>
+    </div>
+
+    <!-- About Me Section -->
+    <div class="flex-column items-center justify-center mt-10 bg-black py-10">
+        <h1 class="text-white my-font text-7xl font-semibold uppercase tracking-[20px] text-center my-color-heading py-5">Who Am  I?</h1>
+        <div class="grid grid-cols-2 my-10 mx-10">
+            <img src="img/Joshua.png" alt="" class="w-full h-100 rounded-xl mb-5 shadow-lg shadow-stone-50/50">
+            <div>
+                <p class="text-white my-font-sub text-lg mt-10 mx-10 leading-10 tracking-[.5px]">
+                I am Joshua Domingo, 22-year-old student at PHINMA Araullo University. I am a committed student who wants to become a good front-end developer. My colorful goals and objectives, which I hold dearly, have driven my academic career. I see myself as an expressive person who loves to voice my ideas to people. I enjoy speaking honestly, whether it's to share my opinions on a subject or to articulate concepts for a project.
+                </p>
+                <div class="py-5 px-10 flex justify-end">
+                    <a href="resume.pdf" download class="bg-slate-700 p-2 rounded-xl text-white text-center hover:bg-[#9dd0b4] hover:text-white ease-in-out flex items-center gap-2" title="Download Resume">
+                        <i class="fas fa-download text-white"></i>
+                        Download Resume
+                    </a>
+                </div>
+            </div> 
         </div>
-        <div class="contactbtn">
-            <button onclick="openPopup()" class="animate__animated animate__zoomInLeft">contact me</button>
-        </div>
-        <form action="insert.php" method="POST">
-            <div class="popup-container" id="popupContainer">
-                <div class="popup-content">
-                    <h4 class="popup-close" onclick="closePopup()" ><i class="fas fa-times"></i></h4>
-                    <h2>Contact Me</h2>
-                    <p>Phone Number: 09278761095</p>
-                    <p>Email: jeswaaa1803@gmail.com</p>
-                    <label for="fullname">Fullname</label>
-                    <input type="text" id="fullname" name="fullname" placeholder="Fullname">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="Email">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" placeholder="Your message"></textarea>
-                    <button>Send</button>
-                    <p>© 2023 Joshua Domingo. All right reserved.</p>
+        
+    </div>
+
+    <!-- Project Section -->
+    <div class="bg-black py-5 px-5">
+         <h1 class="text-white my-font text-7xl font-semibold uppercase tracking-[20px] text-center my-color-heading">Projects</h1>
+         <!-- Card -->
+         <div class="flex items-center justify-center gap-5 px-5  my-5 mx-5">
+            <!-- Card 1 -->
+            <div class="bg-gray-950 shadow-lg shadow-stone-50/50 rounded-xl w-1/3 h-110 hover:scale-105 duration-500">
+                <img src="img/catalog.png" alt="" class="w-full h-50 rounded-t-lg">
+                <h1 class="pt-5 pb-2 px-3 text-black my-font-sub text-xl text-center text-white font-semibold">Appliance Catalog</h1>
+                <p class="py-2 px-7 my-font-sub text-sm text-white text-justify">I built an appliance catalog website that lets users add, view, edit and remove products. The website has a clean and modern design using HTML and Tailwind CSS for styling. For the technical side, I used JavaScript to make the site interactive and PHP to handle data storage and management.</p>
+                <div class="flex justify-between">
+                    <p class="py-2 px-7 my-font-sub text-sm text-white">Tech Stack: <span class="text-mono text-sm">HTML, CSS</span></p>
+                    <div class="px-7">
+                        <a href="#" class="text-white text-capitalize text-sm py-2 px-5 bg-blue-500 rounded-lg my-font-sub font-semibold hover:bg-blue-700 duration-300">View</a>
+                    </div>
                 </div>
             </div>
-        </form>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-     </div>
-    
-     
-      <script>
-        window.addEventListener("load", () => {
-            const loader = document.querySelector(".spinner");
-
-            loader.classList.add("spinner--hidden");
-
-            loader.addEventListener("transitionend", () => {
-                document.body.removeChild(loader);
-            })
-        })
-    </script>
-    <script>
-        // JavaScript functions to control the popup
-        function openPopup() {
-            document.getElementById("popupContainer").style.display = "flex";
-        }
-    
-        function closePopup() {
-            document.getElementById("popupContainer").style.display = "none";
-        }
-    </script>
-    
-    <script>
-                const text = "System Dev | FrontEnd.";
-        let index = 0;
-
-        function type() {
-            document.getElementById("typing-text").textContent += text[index];
-            index++;
-            if (index >= text.length) {
-                index = 0; // Reset index to start over
-                document.getElementById("typing-text").textContent = ""; // Clear text to start over
-            }
-        }
-
-        setInterval(type, 200); // Adjust typing speed by changing the interval (milliseconds)
-
-    </script>
-    
+            <!-- Card 2 -->
+            <div class="bg-white shadow-lg shadow-stone-50/50 rounded-xl w-1/3 h-110 hover:scale-105 duration-500">
+                <img src="img/DSCF2770.JPG" alt="" class="w-full h-50 rounded-t-lg">
+                <h1 class="py-2 px-3 text-black my-font-sub text-xl text-center">Appliance Catalog</h1>
+                <p class="py-2 px-3 my-font-sub text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quia iste molestiae libero unde iure velit ex odio inventore eaque praesentium quisquam, ipsa, vero voluptas deleniti in? Hic, veritatis impedit?</p>
+                <p class="py-2 px-3 my-font-sub">Tech Stack: <span class="text-mono text-sm">HTML, CSS</span></p>
+            </div>
+            <!-- Card 3 -->
+            <div class="bg-white shadow-lg shadow-stone-50/50 rounded-xl w-1/3 h-110 hover:scale-105 duration-500">
+                <img src="img/DSCF2770.JPG" alt="" class="w-full h-50 rounded-t-lg">
+                <h1 class="py-2 px-3 text-black my-font-sub text-xl text-center">Appliance Catalog</h1>
+                <p class="py-2 px-3 my-font-sub text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente dolore vel incidunt? Sequi a error consequatur accusantium enim quaerat adipisci placeat aut in. Totam, quae. Ipsam sit blanditiis inventore in?</p>
+                <p class="py-2 px-3 my-font-sub">Tech Stack: <span class="text-mono text-sm">HTML, CSS</span></p>
+            </div>
+         </div>
+         <div class="flex items-center justify-center mt-10">
+            <button class="overflow-hidden relative w-32 p-2 h-12 bg-black text-white border-2 border-white rounded-md text-xl font-bold cursor-pointer relative z-10 group">
+                View
+                <span class="absolute w-36 h-32 -top-8 -left-2 bg-green-200 rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-500 duration-1000 origin-bottom"></span>
+                <span class="absolute w-36 h-32 -top-8 -left-2 bg-green-400 rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-700 duration-700 origin-bottom"></span>
+                <span class="absolute w-36 h-32 -top-8 -left-2 bg-green-600 rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-1000 duration-500 origin-bottom"></span>
+                <span class="group-hover:opacity-100 group-hover:duration-1000 duration-100 opacity-0 absolute top-2.5 left-6 z-10">Project!</span>
+            </button>
+        </div>
+    </div>
 </body>
 </html>
